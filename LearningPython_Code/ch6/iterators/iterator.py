@@ -4,6 +4,9 @@ class OddEven:
         self._data = data
         self.indexes = (list(range(0, len(data), 2)) +
             list(range(1, len(data), 2)))
+        print(data)
+        print(self.indexes)
+        print("-------------")
 
     def __iter__(self):
         return self
