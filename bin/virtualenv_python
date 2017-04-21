@@ -1,6 +1,6 @@
-#!/bin/bash 
+#!/bin/bash -x
 
-ENVDIR=~/dev/python/env/.lpvenv
+ENVDIR=~/git/python/env/.lpvenv
 # Set up virtual env for Python3
 #echo "The first arg is $0"
 
