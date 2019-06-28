@@ -11,6 +11,8 @@ if  [ "$0" != '-bash' ] ; then
 fi
 
 if [ ! -d  $ENVDIR ]; then
+    # If virtual env isn't working, delete the ..../.lpvenv 
+    # then rerun the line below
     virtualenv  -p $( which /usr/local/bin/python3 ) $ENVDIR
 fi
 

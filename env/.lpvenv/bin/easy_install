@@ -1,5 +1,4 @@
-#!/Users/jaycha/dev/python/env/.lpvenv/bin/python3.6
-
+#!/Users/jay/git/python/env/.lpvenv/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
