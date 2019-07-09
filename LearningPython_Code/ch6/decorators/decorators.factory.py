@@ -26,3 +26,5 @@ def multiply(a, b):
     return a * b
 
 print(cube(5))
+print(square(500))
+print(multiply(20,5))

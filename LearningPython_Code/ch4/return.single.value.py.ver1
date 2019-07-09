@@ -1,0 +1,13 @@
+import sys
+
+# Increasing recursion limit from 997
+
+sys.setrecursionlimit(1500)
+def factorial(n):
+    if n in (0, 1):
+        return 1
+
+    return n * factorial(n-1)
+
+f5 = factorial(1000)  # f5 = 120
+print(f5)
