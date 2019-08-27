@@ -10,11 +10,12 @@ ENVDIR=~/git/python/venv/.python3.7
 # Set up virtual env for Python3
 #echo "The first arg is $0"
 
-#if  [ "$0" != '-bash' ] ; then
-#   echo "USAGE : . $0"
-#    echo "Aborting..."
-#    exit 1
-#fi
+HASBASH=`echo $0 | awk '/bash$/'`
+if  [ "$HASBASH" == "" ] ; then
+   echo "USAGE : . $0"
+    echo "Aborting..."
+    exit 1
+fi
 
 if [ ! -d  $ENVDIR ]; then
     # If virtual env isn't working, delete the ENVDIR first
