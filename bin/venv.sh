@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 #
 # simple script to maintain python virtual env.
@@ -6,13 +6,11 @@
 # See https://docs.python.org/3/tutorial/venv.html for details
 #
 
-ENVDIR=~/git/python/venv/.python3.7
+ENVDIR=~/git/python/venv/.python3_default
 # Set up virtual env for Python3
-#echo "The first arg is $0"
 
-HASBASH=`echo $0 | awk '/bash$/'`
-if  [ "$HASBASH" == "" ] ; then
-   echo "USAGE : . $0"
+if  [ $# == 0 ] ; then
+    echo "USAGE : . $0"
     echo "Aborting..."
     exit 1
 fi
